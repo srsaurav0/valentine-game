@@ -106,7 +106,7 @@ export class FlappyScene extends Phaser.Scene {
                 this.score++;
                 this.scoreText.setText(`Score: ${this.score}`);
 
-                if (this.score >= 3) {
+                if (this.score >= 4) {
                     this.scene.start("CongratulationsScreen", { level: "FlappyScene", isFinal: true });
                 }
             }
